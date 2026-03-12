@@ -49,7 +49,7 @@ export function ContactSection() {
   ]
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
+    <section id="contact" ref={sectionRef} className="relative py-20 sm:py-32 px-4 sm:px-6 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -59,71 +59,71 @@ export function ContactSection() {
       <div className="max-w-6xl mx-auto relative">
         {/* Section header */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-12 sm:mb-16 px-2 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="text-primary font-mono text-sm tracking-wider uppercase">
+          <span className="text-primary font-mono text-xs sm:text-sm tracking-wider uppercase">
             {language === "ar" ? "تواصل" : "Contact"}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 break-words">
             {t("contact.title")}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("contact.subtitle")}</p>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">{t("contact.subtitle")}</p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-5 gap-8 sm:gap-12">
           {/* Contact info */}
           <div
-            className={`lg:col-span-2 space-y-6 transition-all duration-1000 ${
+            className={`lg:col-span-2 space-y-4 sm:space-y-6 transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
             }`}
           >
             {/* Info cards */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
-                className="flex items-center gap-4 p-5 rounded-2xl glass hover:bg-secondary/30 transition-all duration-300 group hover:scale-[1.02]"
+                className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 rounded-2xl glass hover:bg-secondary/30 transition-all duration-300 group hover:scale-[1.02] active:scale-95"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Mail className="w-6 h-6 text-primary" />
+                <div className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
+                  <Mail className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("contact.info.email")}</p>
-                  <p className="font-semibold">{CONTACT_INFO.email}</p>
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm text-muted-foreground">{t("contact.info.email")}</p>
+                  <p className="font-semibold text-sm sm:text-base truncate">{CONTACT_INFO.email}</p>
                 </div>
               </a>
 
               <a
                 href={`tel:${CONTACT_INFO.phone}`}
-                className="flex items-center gap-4 p-5 rounded-2xl glass hover:bg-secondary/30 transition-all duration-300 group hover:scale-[1.02]"
+                className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 rounded-2xl glass hover:bg-secondary/30 transition-all duration-300 group hover:scale-[1.02] active:scale-95"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Phone className="w-6 h-6 text-primary" />
+                <div className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
+                  <Phone className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("contact.info.phone")}</p>
-                  <p className="font-semibold" dir="ltr">{CONTACT_INFO.phone}</p>
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm text-muted-foreground">{t("contact.info.phone")}</p>
+                  <p className="font-semibold text-sm sm:text-base" dir="ltr">{CONTACT_INFO.phone}</p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-5 rounded-2xl glass">
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 rounded-2xl glass">
+                <div className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("contact.info.location")}</p>
-                  <p className="font-semibold">{t("contact.info.locationValue")}</p>
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm text-muted-foreground">{t("contact.info.location")}</p>
+                  <p className="font-semibold text-sm sm:text-base">{t("contact.info.locationValue")}</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-5 rounded-2xl glass">
-                <div className="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-green-500" />
+              <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 rounded-2xl glass">
+                <div className="w-10 sm:w-14 h-10 sm:h-14 rounded-2xl bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 sm:w-6 h-5 sm:h-6 text-green-500" />
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">{t("contact.info.availability")}</p>
-                  <p className="font-semibold text-green-500">{t("contact.info.availabilityValue")}</p>
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm text-muted-foreground">{t("contact.info.availability")}</p>
+                  <p className="font-semibold text-sm sm:text-base text-green-500">{t("contact.info.availabilityValue")}</p>
                 </div>
               </div>
             </div>

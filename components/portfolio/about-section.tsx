@@ -87,17 +87,17 @@ export function AboutSection() {
       <div className="max-w-6xl mx-auto relative">
         {/* Section header */}
         <div
-          className={`text-center mb-20 transition-all duration-1000 ${
+          className={`text-center mb-20 px-4 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="text-primary font-mono text-sm tracking-wider uppercase">
+          <span className="text-primary font-mono text-xs sm:text-sm tracking-wider uppercase">
             {t("about.title")}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-8 break-words">
             {t("about.subtitle")}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t("about.description")}
           </p>
         </div>
@@ -134,26 +134,26 @@ export function AboutSection() {
 
         {/* Quick Stats */}
         <div
-          className={`grid grid-cols-3 gap-4 mb-20 transition-all duration-1000 delay-200 ${
+          className={`grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-20 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300"
+              className="glass rounded-2xl p-4 sm:p-6 text-center hover:scale-105 transition-transform duration-300"
               style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </div>
 
         {/* What I Make - Focus on Results */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-semibold text-center mb-12">{language === "ar" ? "ما الذي أقدمه" : "What You Get"}</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mb-20 px-4">
+          <h3 className="text-xl sm:text-2xl font-semibold text-center mb-8 sm:mb-12">{language === "ar" ? "ما الذي أقدمه" : "What You Get"}</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {whatIMakes.map((item, index) => (
               <div
                 key={item.title}
@@ -174,12 +174,12 @@ export function AboutSection() {
 
         {/* Tech Stack - Simple and Clear */}
         <div
-          className={`transition-all duration-1000 delay-500 ${
+          className={`px-4 transition-all duration-1000 delay-500 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h3 className="text-2xl font-semibold mb-8 text-center">{t("about.skills")}</h3>
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-center">{t("about.skills")}</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {[
               { name: "Flutter & Dart", desc: language === "ar" ? "تطوير التطبيقات الأساسي" : "Core development" },
               { name: "REST APIs", desc: language === "ar" ? "تكامل الخوادم والبيانات" : "Server integration" },

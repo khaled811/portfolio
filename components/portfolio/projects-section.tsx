@@ -340,7 +340,7 @@ export function ProjectsSection() {
               }`}
             >
               {/* Project selector tabs */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-wrap gap-2 sm:gap-3 mb-8">
                 {projects.map((project, index) => (
                   <button
                     key={project.id}
@@ -348,7 +348,7 @@ export function ProjectsSection() {
                       setActiveIndex(index)
                       setActiveScreenshot(0)
                     }}
-                    className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
+                    className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all ${
                       activeIndex === index
                         ? 'bg-primary text-primary-foreground scale-105'
                         : 'glass hover:bg-secondary/50'
@@ -361,8 +361,8 @@ export function ProjectsSection() {
 
               {/* Active project info */}
               <div key={currentProject.id} className="animate-slide-up">
-                <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-3xl sm:text-4xl font-bold">
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                     {currentProject.titleDisplay}
                   </h3>
                   {currentProject.offline && (
@@ -372,8 +372,8 @@ export function ProjectsSection() {
                     </span>
                   )}
                 </div>
-                <p className="text-primary font-medium mb-4">{currentProject.subtitle}</p>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-sm sm:text-base text-primary font-medium mb-4">{currentProject.subtitle}</p>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6">
                   {currentProject.description}
                 </p>
 
@@ -406,10 +406,10 @@ export function ProjectsSection() {
 
                 {/* CTA */}
                 {hasScreenshots && (
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-3 sm:gap-4">
                     <button
                       onClick={() => setShowScreenshots(true)}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:opacity-90 transition-opacity"
+                      className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-primary-foreground rounded-full font-medium text-sm sm:text-base hover:opacity-90 transition-opacity active:scale-95"
                     >
                       {language === 'ar' ? 'شاهد التطبيق' : 'View App'}
                       <ArrowUpRight className="w-4 h-4" />

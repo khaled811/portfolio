@@ -127,8 +127,18 @@
 
 /* Custom animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotateY(-15deg) rotateX(5deg); }
-  50% { transform: translateY(-20px) rotateY(-15deg) rotateX(5deg); }
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px) scale(1) rotate(0deg);
+  }
+  25% { 
+    transform: translateY(35px) translateX(20px) scale(1.15) rotate(90deg);
+  }
+  50% { 
+    transform: translateY(60px) translateX(0px) scale(1) rotate(180deg);
+  }
+  75% { 
+    transform: translateY(35px) translateX(-20px) scale(1.15) rotate(270deg);
+  }
 }
 
 @keyframes glow {

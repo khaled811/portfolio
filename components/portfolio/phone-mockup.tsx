@@ -42,11 +42,14 @@ export function PhoneMockup({ children, className = "", animate = true }: PhoneM
   }, [animate])
 
   return (
-    <div className={`perspective-1000 ${className}`}>
+    <div className={`perspective-1000 ${className}`} style={{ perspective: '1000px' }}>
       <div
         ref={phoneRef}
         className="preserve-3d transition-transform duration-300 ease-out"
-        style={{ transform: 'rotateY(-15deg) rotateX(5deg)' }}
+        style={{ 
+          transform: 'rotateY(-15deg) rotateX(5deg)',
+          transformStyle: 'preserve-3d'
+        }}
       >
         {/* Phone frame */}
         <div className="relative w-[280px] h-[580px] rounded-[50px] bg-gradient-to-b from-zinc-700 to-zinc-900 p-[14px] shadow-2xl">
