@@ -14,38 +14,38 @@ export function ProjectsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const { t, language } = useLanguage()
 
-  const ayamaScreenshots = [
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IxKNnSzS0rmMVNGKxdyhB5y9YUvzUu.png',
-      title: language === 'ar' ? 'شاشة البداية' : 'Splash Screen',
-      description: language === 'ar' ? 'شاشة الترحيب مع شعار Ayama' : 'Welcome splash screen with Ayama branding',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DjCXVFR3OuREOxDWo8atkuzpebf9fU.png',
-      title: language === 'ar' ? 'اختيار اللغة' : 'Language Selection',
-      description: language === 'ar' ? 'اختر بين العربية والإنجليزية للبدء' : 'Choose between Arabic and English to get started',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UXxppvAPcpViQ7v6D4jvUNgy4DfELY.png',
-      title: language === 'ar' ? 'الجلسات (العربية)' : 'Sessions (Arabic)',
-      description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة عربية' : '4 breathing sessions designed for kids with Arabic interface',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XfpQFVYqiN0qTeLwg1eO6HgsEQKOKo.png',
-      title: language === 'ar' ? 'الجلسات (الإنجليزية)' : 'Sessions (English)',
-      description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة إنجليزية' : '4 breathing sessions designed for kids with English interface',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0MYSocsoC0XlR7iKJZMAIgsZMdh1R0.png',
-      title: language === 'ar' ? 'الإعدادات (الإنجليزية)' : 'Settings (English)',
-      description: language === 'ar' ? 'خيارات اللغة والتعليمات ومعلومات التطبيق' : 'Language options, instructions, and app info',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iRce3W7F4QBZyW5NjngK0G8LY0bEhC.png',
-      title: language === 'ar' ? 'الإعدادات (العربية)' : 'Settings (Arabic)',
-      description: language === 'ar' ? 'دعم كامل للعربية مع واجهة RTL' : 'Full Arabic support with RTL interface',
-    },
-  ]
+ const ayamaScreenshots = [
+  {
+    url: '/images/welcome.png',
+    title: language === 'ar' ? 'شاشة البداية' : 'Splash Screen',
+    description: language === 'ar' ? 'شاشة الترحيب مع شعار Ayama' : 'Welcome splash screen with Ayama branding',
+  },
+  {
+    url: '/images/language-selection.png',
+    title: language === 'ar' ? 'اختيار اللغة' : 'Language Selection',
+    description: language === 'ar' ? 'اختر بين العربية والإنجليزية للبدء' : 'Choose between Arabic and English to get started',
+  },
+  {
+    url: '/images/sessions-ar.png',
+    title: language === 'ar' ? 'الجلسات (العربية)' : 'Sessions (Arabic)',
+    description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة عربية' : '4 breathing sessions designed for kids with Arabic interface',
+  },
+  {
+    url: '/images/sessions-en.png',
+    title: language === 'ar' ? 'الجلسات (الإنجليزية)' : 'Sessions (English)',
+    description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة إنجليزية' : '4 breathing sessions designed for kids with English interface',
+  },
+  {
+    url: '/images/settings-en.png',
+    title: language === 'ar' ? 'الإعدادات (الإنجليزية)' : 'Settings (English)',
+    description: language === 'ar' ? 'خيارات اللغة والتعليمات ومعلومات التطبيق' : 'Language options, instructions, and app info',
+  },
+  {
+    url: '/images/settings-ar.png',
+    title: language === 'ar' ? 'الإعدادات (العربية)' : 'Settings (Arabic)',
+    description: language === 'ar' ? 'دعم كامل للعربية مع واجهة RTL' : 'Full Arabic support with RTL interface',
+  },
+]
 
   const najehScreenshots = [
     {
