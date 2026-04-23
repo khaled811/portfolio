@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { PhoneMockup } from './phone-mockup'
-import { ArrowUpRight, Download, Star, CheckCircle, Wifi, WifiOff, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowUpRight, CheckCircle, WifiOff, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
 import Image from 'next/image'
 
