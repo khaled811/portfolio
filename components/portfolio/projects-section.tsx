@@ -47,131 +47,141 @@ export function ProjectsSection() {
   },
 ]
 
-  const najehScreenshots = [
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0q70e6WT7dtcbHS83L7il30ZrSnBb4.png',
-      title: language === 'ar' ? 'الرئيسية' : 'Home Dashboard',
-      description: language === 'ar' ? 'لوحة التحكم الرئيسية مع ملخص المبيعات وخيارات سريعة' : 'Main dashboard with sales summary and quick actions',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t9HW7x7e2lB6oDQ45pqS2z7qyWreKb.png',
-      title: language === 'ar' ? 'مواعيد التحصيل' : 'Collection Schedules',
-      description: language === 'ar' ? 'جدولة مواعيد تحصيل المبيعات من العملاء' : 'Schedule payment collection dates from customers',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tXZ4xOB0PHib08Cmgt1Y9td9gIPyu5.png',
-      title: language === 'ar' ? 'الإعدادات' : 'Settings',
-      description: language === 'ar' ? 'إدارة أهداف المبيعات الحالية والسابقة' : 'Manage current and previous sales targets',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c2RP2IcNrv6AXzkC9gSWXMPxXksyT8.png',
-      title: language === 'ar' ? 'تحليلات' : 'Analytics',
-      description: language === 'ar' ? 'تحليل المبيعات وأفضل العملاء والمنتجات' : 'Sales analytics with top customers and products',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZAIMfD31jaLHh9DO3yziLxPgnvDw15.png',
-      title: language === 'ar' ? 'منتجات بطيئة' : 'Slow-Moving Products',
-      description: language === 'ar' ? 'عرض المنتجات البطيئة الحركة مع بحث متقدم' : 'Identify slow-moving products with advanced search',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D6yZDCc31LOH4sGJSzWmxBvs2GKjwo.png',
-      title: language === 'ar' ? 'السجل' : 'Log & Records',
-      description: language === 'ar' ? 'سجل الفواتير والمستندات والتحصيلات' : 'Record of invoices, receipts, and collections',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CP28bkA4OqHvI1RRkIieRuvyQXmC0J.png',
-      title: language === 'ar' ? 'الحسابات' : 'Accounts',
-      description: language === 'ar' ? 'عرض أرصدة وحسابات جميع العملاء' : 'View account balances for all customers',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nvZij8K5AFHApcc557BtQ4vKGrs5Pd.png',
-      title: language === 'ar' ? 'العملاء' : 'Customers',
-      description: language === 'ar' ? 'قائمة العملاء مع البحث والخيارات السريعة' : 'Customer list with search and quick actions',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lRzksb01oRew0mqC2jJqXMhgZ7hjRU.png',
-      title: language === 'ar' ? 'خيارات العملاء' : 'Customer Options',
-      description: language === 'ar' ? 'خيارات شاملة لإدارة العميل والفواتير والمبيعات' : 'Comprehensive customer management options',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TrcaxHAjljXgTbKPxvjvaYD1fRD6i5.png',
-      title: language === 'ar' ? 'تحديث المخزون' : 'Update Inventory',
-      description: language === 'ar' ? 'تحديث أسعار المنتجات والمخزون الحي' : 'Update product prices and live inventory',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j1Fwc8nKwWMshanLxPIZhcVJNnI0AK.png',
-      title: language === 'ar' ? 'إضافة فاتورة' : 'Add Invoice',
-      description: language === 'ar' ? 'إنشاء فاتورة جديدة وإضافة المنتجات' : 'Create new invoice and add products',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YCVLQ3iSsYPrpZFk9AqAIBwFlRvB3O.png',
-      title: language === 'ar' ? 'ملخص المبيعات' : 'Sales Summary',
-      description: language === 'ar' ? 'ملخص المبيعات حسب الفترة والمنتجات' : 'Sales summary by period and products',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1nm92PIWkRcCRofSnLkOU6YW8s8fZZ.png',
-      title: language === 'ar' ? 'تحصيل' : 'Collection',
-      description: language === 'ar' ? 'تسجيل تحصيل المبيعات والدفعات' : 'Record payment collections and receipts',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ikfaAdVO6fcMbVjhPzVV3wV3aiquZo.png',
-      title: language === 'ar' ? 'المنتجات' : 'Products',
-      description: language === 'ar' ? 'إدارة المنتجات والأسعار والصور' : 'Manage products, prices, and images',
-    },
-  ]
+const najehScreenshots = [
+  {
+    url: '/images/najeh-home.png',
+    title: language === 'ar' ? 'الرئيسية' : 'Home',
+    description: language === 'ar' ? 'الواجهة الرئيسية' : 'Main dashboard',
+  },
+  {
+    url: '/images/najeh-add-invoice.png',
+    title: language === 'ar' ? 'إضافة فاتورة' : 'Add Invoice',
+    description: language === 'ar' ? 'إنشاء فاتورة جديدة' : 'Create invoice',
+  },
+  {
+    url: '/images/najeh-add-edit-product.png',
+    title: language === 'ar' ? 'إضافة وتعديل منتج' : 'Add/Edit Product',
+    description: language === 'ar' ? 'إدارة المنتجات' : 'Manage products',
+  },
+  {
+    url: '/images/najeh-collection.png',
+    title: language === 'ar' ? 'التحصيل' : 'Collection',
+    description: language === 'ar' ? 'تسجيل الدفعات' : 'Record payments',
+  },
+  {
+    url: '/images/najeh-collection-schedule.png',
+    title: language === 'ar' ? 'مواعيد التحصيل' : 'Collection Schedule',
+    description: language === 'ar' ? 'تنظيم المواعيد' : 'Manage schedules',
+  },
+  {
+    url: '/images/najeh-customer-options.png',
+    title: language === 'ar' ? 'خيارات العميل' : 'Customer Options',
+    description: language === 'ar' ? 'إدارة العميل' : 'Customer actions',
+  },
+  {
+    url: '/images/najeh-customers.png',
+    title: language === 'ar' ? 'العملاء' : 'Customers',
+    description: language === 'ar' ? 'قائمة العملاء' : 'Customer list',
+  },
+  {
+    url: '/images/najeh-accounts.png',
+    title: language === 'ar' ? 'الحسابات' : 'Accounts',
+    description: language === 'ar' ? 'أرصدة العملاء' : 'Balances',
+  },
+  {
+    url: '/images/najeh-records.png',
+    title: language === 'ar' ? 'السجلات' : 'Records',
+    description: language === 'ar' ? 'عرض السجلات' : 'Records history',
+  },
+  {
+    url: '/images/najeh-reports.png',
+    title: language === 'ar' ? 'التقارير' : 'Reports',
+    description: language === 'ar' ? 'تقارير المبيعات' : 'Sales reports',
+  },
+  {
+    url: '/images/najeh-monthly-sales-report.png',
+    title: language === 'ar' ? 'تقرير شهري' : 'Monthly Report',
+    description: language === 'ar' ? 'تقرير المبيعات الشهري' : 'Monthly sales report',
+  },
+  {
+    url: '/images/najeh-returns.png',
+    title: language === 'ar' ? 'المرتجعات' : 'Returns',
+    description: language === 'ar' ? 'إدارة المرتجعات' : 'Manage returns',
+  },
+  {
+    url: '/images/najeh-slow-products.png',
+    title: language === 'ar' ? 'منتجات بطيئة' : 'Slow Products',
+    description: language === 'ar' ? 'تحليل المنتجات البطيئة' : 'Slow items',
+  },
+  {
+    url: '/images/najeh-settings.png',
+    title: language === 'ar' ? 'الإعدادات' : 'Settings',
+    description: language === 'ar' ? 'إعدادات التطبيق' : 'App settings',
+  },
+  {
+    url: '/images/najeh-add-restriction.png',
+    title: language === 'ar' ? 'إضافة قيد' : 'Add Restriction',
+    description: language === 'ar' ? 'إضافة قيد جديد' : 'Add restriction',
+  },
+  {
+    url: '/images/najeh-customer-inventory.png',
+    title: language === 'ar' ? 'مخزون العميل' : 'Customer Inventory',
+    description: language === 'ar' ? 'مخزون خاص بالعميل' : 'Customer stock',
+  },
+  {
+    url: '/images/najeh-customer-update-inventory.png',
+    title: language === 'ar' ? 'تحديث مخزون العميل' : 'Update Customer Inventory',
+    description: language === 'ar' ? 'تحديث مخزون العميل' : 'Update stock',
+  },
+]
 
   const docstracScreenshots = [
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7eyS6BWh1ZzD2QllETuOmShzgd6pgi.png',
-      title: language === 'ar' ? 'تسجيل الدخول' : 'Login',
-      description: language === 'ar' ? 'شاشة تسجيل الدخول ببريد إلكتروني وكلمة المرور' : 'Login screen with email and password authentication',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FOTslMSetpd2MrUdsGSaTyoKhDfuCP.png',
-      title: language === 'ar' ? 'إنشاء حساب' : 'Sign Up',
-      description: language === 'ar' ? 'تسجيل حساب جديد مع الاسم والهاتف والبريد الإلكتروني وكلمة المرور' : 'Create new account with name, phone, email, and password',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1d7IwspaswzdxjAgEL7J5LkyUjZZrH.png',
-      title: language === 'ar' ? 'قائمة النماذج المتاحة' : 'Available Forms',
-      description: language === 'ar' ? 'عرض جميع النماذج المتاحة: طلب إجازة، تضارب امتحان، إعادة امتحان، استئناف' : 'Browse all available forms: Leave, Clash, Re-sit, and Appeal requests',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IozcsKLZykd7eHF0N8lm9qq1HSO8OK.png',
-      title: language === 'ar' ? 'نموذج طلب الإجازة' : 'Leave Application',
-      description: language === 'ar' ? 'طلب إجازة رسمية مع تحديد الفترة والمبرر والمقررات المتأثرة' : 'Request official leave with date range, reason, and affected subjects',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ceyQRIWT9kSiYDsAz8tns1T8VbwLHq.png',
-      title: language === 'ar' ? 'نموذج إعادة الامتحان' : 'Exam Re-sit Form',
-      description: language === 'ar' ? 'طلب إعادة امتحان مع معلومات الطالب والقسم والمتطلبات' : 'Apply for exam re-sit with student info, faculty, and subject details',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ifaD53oMGj24lEDqm6bsKW624Dl4j2.png',
-      title: language === 'ar' ? 'نموذج تضارب الامتحان' : 'Exam Clash Form',
-      description: language === 'ar' ? 'نموذج شامل لإبلاغ عن تضارب في جدول الامتحانات مع معلومات الطالب' : 'Complete form for reporting exam schedule conflicts with student details',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ALu3qTEubEJKD4OVIwobwkLYxrSDrf.png',
-      title: language === 'ar' ? 'نموذج الاستئناف الأكاديمي' : 'Academic Appeal Form',
-      description: language === 'ar' ? 'تقديم استئناف أكاديمي مع معلومات المقرر والدرجة وسبب الاستئناف' : 'Submit academic appeals with course details, grade, and reason',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-G1FRP0IRseAcySw24fAdXHXflbRa3C.png',
-      title: language === 'ar' ? 'حالة الطلبات' : 'Request Status',
-      description: language === 'ar' ? 'تتبع حالة جميع الطلبات: قيد الانتظار، موافقة، رفض' : 'Track all request statuses: Pending, Approved, or Rejected',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ntDkdLOAnPoEicjc8LhjLv85xXIcQI.png',
-      title: language === 'ar' ? 'الإشعارات' : 'Notifications',
-      description: language === 'ar' ? 'عرض إشعارات الموافقة والرفض من المعلمين والعمداء في الوقت الفعلي' : 'Real-time notifications for form approvals and rejections from faculty',
-    },
-    {
-      url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-AzUy6qGDME4MCBkQYzi5bZKhCxdIT4.png',
-      title: language === 'ar' ? 'ملف الطالب' : 'Student Profile',
-      description: language === 'ar' ? 'عرض معلومات الطالب مع الصورة الشخصية وخيارات حفظ والخروج' : 'Student profile with photo, save changes, and logout options',
-    },
-  ]
+  {
+    url: '/images/login.png',
+    title: language === 'ar' ? 'تسجيل الدخول' : 'Login',
+    description: language === 'ar' ? 'الدخول للحساب' : 'Login screen',
+  },
+  {
+    url: '/images/signUp.png',
+    title: language === 'ar' ? 'إنشاء حساب' : 'Sign Up',
+    description: language === 'ar' ? 'تسجيل حساب جديد' : 'Create account',
+  },
+  {
+    url: '/images/available-forms.png',
+    title: language === 'ar' ? 'النماذج المتاحة' : 'Forms',
+    description: language === 'ar' ? 'جميع النماذج' : 'Available forms',
+  },
+  {
+    url: '/images/leave-form.png',
+    title: language === 'ar' ? 'طلب إجازة' : 'Leave Form',
+    description: language === 'ar' ? 'نموذج الإجازة' : 'Leave request',
+  },
+  {
+    url: '/images/resit-form.png',
+    title: language === 'ar' ? 'إعادة امتحان' : 'Resit Form',
+    description: language === 'ar' ? 'طلب إعادة' : 'Exam resit',
+  },
+  {
+    url: '/images/clash-form.png',
+    title: language === 'ar' ? 'تضارب امتحان' : 'Clash Form',
+    description: language === 'ar' ? 'تضارب جدول' : 'Exam clash',
+  },
+  {
+    url: '/images/appeal-form.png',
+    title: language === 'ar' ? 'استئناف' : 'Appeal',
+    description: language === 'ar' ? 'استئناف أكاديمي' : 'Academic appeal',
+  },
+  {
+    url: '/images/status.png',
+    title: language === 'ar' ? 'حالة الطلب' : 'Status',
+    description: language === 'ar' ? 'متابعة الطلبات' : 'Track requests',
+  },
+  {
+    url: '/images/notifications.png',
+    title: language === 'ar' ? 'الإشعارات' : 'Notifications',
+    description: language === 'ar' ? 'تنبيهات فورية' : 'Notifications',
+  },
+]
 
   const projects = [
     {
