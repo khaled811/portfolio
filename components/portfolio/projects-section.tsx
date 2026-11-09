@@ -212,6 +212,34 @@ const najehScreenshots = [
     },
   ]
 
+  const aryafScreenshots = [
+    {
+      url: '/images/aryaf/dashboard.webp',
+      title: isAr ? 'لوحة تحكم المدير' : 'Manager dashboard',
+      description: isAr ? 'ديون السوق والعملاء، اختصارات الإدارة، وسجل التصفية اليومية مع تصدير PDF.' : 'Market & client debts, management shortcuts and the daily settlement log with PDF export.',
+    },
+    {
+      url: '/images/aryaf/cashier-sales.webp',
+      title: isAr ? 'مبيعات الكاشير' : 'Cashier sales',
+      description: isAr ? 'حصر مبيعات الأصناف (المستلم، التالف، المتبقي، الموزّع) وحفظ الكشف بالسحابة.' : 'Per-item sales tally (received, waste, remaining, distributed) saved to the cloud.',
+    },
+    {
+      url: '/images/aryaf/showroom-home.webp',
+      title: isAr ? 'المعرض' : 'Showroom',
+      description: isAr ? 'النقد المتوقع، المبيعات والمصاريف، طلب عهدة وتسجيل بيع وحركات اليوم.' : 'Expected cash, sales and expenses, custody requests and today’s movements.',
+    },
+    {
+      url: '/images/aryaf/baker-home.webp',
+      title: isAr ? 'الإنتاج اليومي (العجّان)' : 'Daily production (baker)',
+      description: isAr ? 'فترات الإنتاج وكميات العجن المطلوبة من الإدارة وتسجيل الدفعات.' : 'Production periods, dough quantities set by management, and batch logging.',
+    },
+    {
+      url: '/images/aryaf/inventory.webp',
+      title: isAr ? 'المخزون' : 'Inventory',
+      description: isAr ? 'المواد الخام والمنتجات مع تنبيه فوري للمواد منخفضة الرصيد.' : 'Raw materials and products with instant alerts for low stock.',
+    },
+  ]
+
   const projects = [
     {
       id: 4,
@@ -230,6 +258,24 @@ const najehScreenshots = [
         ? ['طلب خدمة بخطوات بسيطة', 'توقيع العقود من التطبيق', 'جدولة الدفعات ورفع الإيصالات', 'متابعة مراحل المشروع بالصور', 'إشعارات فورية', 'واجهة عربية RTL كاملة']
         : ['Request a service in a few steps', 'Sign contracts in-app', 'Payment schedule & receipt upload', 'Project stages with photos', 'Instant notifications', 'Full Arabic RTL interface'],
       screenshots: thulathiScreenshots,
+    },
+    {
+      id: 5,
+      title: isAr ? 'أرياف' : 'Aryaf',
+      titleDisplay: isAr ? 'أرياف' : 'أرياف - Aryaf',
+      subtitle: isAr ? 'نظام إدارة المخابز' : 'Bakery Management System',
+      description: isAr
+        ? 'نظام متكامل لإدارة سلسلة مخابز: لوحة للمدير، وتطبيقات للكاشير والمعرض وكابتن التوزيع والعجّان، في تطبيق واحد بصلاحيات لكل دور. يغطي المبيعات والديون، والمخزون والموردين، وجدولة فترات الإنتاج، والتصفية اليومية، مع تصدير كشوفات PDF وExcel وطباعة إيصالات حرارية.'
+        : 'An all-in-one system for running a bakery chain: a manager dashboard plus cashier, showroom, delivery-captain and baker roles in a single role-based app. Covers sales and debts, inventory and suppliers, production scheduling and daily settlement, with PDF/Excel statements and thermal receipt printing.',
+      tags: ['Flutter', 'Firebase', 'Riverpod', 'PDF & Excel'],
+      color: 'from-emerald-700 to-green-900',
+      bgColor: 'bg-gradient-to-br from-orange-50 to-emerald-100',
+      icon: '/images/aryaf-icon.webp',
+      offline: false,
+      features: isAr
+        ? ['خمسة أدوار بصلاحيات منفصلة', 'التصفية اليومية واعتماد الإقفال', 'متابعة الديون وكشف حساب العميل', 'المخزون مع تنبيهات انخفاض الرصيد', 'جدولة فترات الإنتاج والإشعارات', 'تصدير PDF وExcel وإيصالات حرارية']
+        : ['Five roles with separate permissions', 'Daily settlement and close approval', 'Debt tracking and client statements', 'Inventory with low-stock alerts', 'Production scheduling & notifications', 'PDF / Excel export and thermal receipts'],
+      screenshots: aryafScreenshots,
     },
     {
       id: 1,
