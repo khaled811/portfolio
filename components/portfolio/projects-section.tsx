@@ -183,7 +183,54 @@ const najehScreenshots = [
   },
 ]
 
+  const isAr = language === 'ar'
+  const thulathiScreenshots = [
+    {
+      url: '/images/thulathi-app/onboarding-1.webp',
+      title: isAr ? 'اطلب خدمتك بخطوات بسيطة' : 'Request a service in simple steps',
+      description: isAr ? 'شاشات تعريفية بتوضيحات مرسومة تشرح رحلة العميل من أول خطوة.' : 'Onboarding with custom illustrations that walk clients through the journey.',
+    },
+    {
+      url: '/images/thulathi-app/onboarding-2.webp',
+      title: isAr ? 'تابع التنفيذ والدفعات' : 'Follow execution and payments',
+      description: isAr ? 'متابعة مراحل المشروع والدفعات أولاً بأول من التطبيق.' : 'Follow project stages and payments step by step.',
+    },
+    {
+      url: '/images/thulathi-app/onboarding-3.webp',
+      title: isAr ? 'وقّع عقدك من التطبيق' : 'Sign your contract in-app',
+      description: isAr ? 'توقيع العقود ورفع الإيصالات مباشرة بدون زيارات.' : 'Sign contracts and upload receipts directly, no office visits.',
+    },
+    {
+      url: '/images/thulathi-app/home-new.webp',
+      title: isAr ? 'الرئيسية للعميل الجديد' : 'Home for new clients',
+      description: isAr ? 'عرض الخدمات وأعمال الشركة وخطوات العمل بوضوح.' : 'Services, past work and how it works, laid out clearly.',
+    },
+    {
+      url: '/images/thulathi-app/home-active.webp',
+      title: isAr ? 'الرئيسية مع مشروع جارٍ' : 'Home with an active project',
+      description: isAr ? 'نسبة الإنجاز وآخر صورة من الموقع والعقود المنتظرة والإجراءات السريعة.' : 'Progress, latest site photo, pending contracts and quick actions.',
+    },
+  ]
+
   const projects = [
+    {
+      id: 4,
+      title: isAr ? 'ثلاثي' : 'Thulathi',
+      titleDisplay: isAr ? 'ثلاثي' : 'ثلاثي - Thulathi',
+      subtitle: isAr ? 'تطبيق إدارة العقود والمشاريع' : 'Contracts & Projects Management App',
+      description: isAr
+        ? 'تطبيق للعملاء لطلب خدمات التصميم والتنفيذ ومتابعة مشاريعهم من الفكرة إلى التسليم: توقيع العقود، وجدولة الدفعات ورفع الإيصالات، وصور تقدّم العمل، وإشعارات فورية. مرتبط بلوحة تحكم وAPI مبنيين بـ Laravel، بواجهة عربية كاملة.'
+        : 'A client app to request design & build services and follow projects from idea to handover: contract signing, payment schedules and receipt uploads, progress photos and instant notifications. Connected to a Laravel dashboard and API, with a full Arabic RTL interface.',
+      tags: ['Flutter', 'REST API', 'Laravel', 'Arabic RTL'],
+      color: 'from-teal-500 to-cyan-700',
+      bgColor: 'bg-gradient-to-br from-teal-50 to-cyan-100',
+      icon: '/images/thulathi-icon.webp',
+      offline: false,
+      features: isAr
+        ? ['طلب خدمة بخطوات بسيطة', 'توقيع العقود من التطبيق', 'جدولة الدفعات ورفع الإيصالات', 'متابعة مراحل المشروع بالصور', 'إشعارات فورية', 'واجهة عربية RTL كاملة']
+        : ['Request a service in a few steps', 'Sign contracts in-app', 'Payment schedule & receipt upload', 'Project stages with photos', 'Instant notifications', 'Full Arabic RTL interface'],
+      screenshots: thulathiScreenshots,
+    },
     {
       id: 1,
       title: language === 'ar' ? 'ناجح' : 'Najeh',
