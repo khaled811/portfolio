@@ -11,13 +11,19 @@ export function HeroSection() {
   const { t, dir } = useLanguage()
 
   useEffect(() => {
+    let raf = 0
     const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return
+      if (!containerRef.current || raf) return
+      // throttle to one update per frame, and skip when hero is scrolled out of view
+      if (window.scrollY > window.innerHeight) return
       const { clientX, clientY } = e
-      const { innerWidth, innerHeight } = window
-      setMousePos({
-        x: (clientX / innerWidth - 0.5) * 20,
-        y: (clientY / innerHeight - 0.5) * 20,
+      raf = requestAnimationFrame(() => {
+        raf = 0
+        const { innerWidth, innerHeight } = window
+        setMousePos({
+          x: (clientX / innerWidth - 0.5) * 20,
+          y: (clientY / innerHeight - 0.5) * 20,
+        })
       })
     }
     window.addEventListener("mousemove", handleMouseMove)
@@ -32,7 +38,7 @@ export function HeroSection() {
       {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className="absolute w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse-glow"
+          className="absolute w-96 h-96 rounded-full animate-pulse-glow will-change-transform bg-[radial-gradient(circle,color-mix(in_oklab,var(--primary)_28%,transparent)_0%,transparent_68%)]"
           style={{
             top: "20%",
             left: dir === "rtl" ? "auto" : "20%",
@@ -41,7 +47,7 @@ export function HeroSection() {
           }}
         />
         <div
-          className="absolute w-80 h-80 bg-chart-2/20 rounded-full blur-[100px] animate-pulse-glow"
+          className="absolute w-80 h-80 rounded-full animate-pulse-glow will-change-transform bg-[radial-gradient(circle,color-mix(in_oklab,var(--chart-2)_28%,transparent)_0%,transparent_68%)]"
           style={{
             bottom: "20%",
             right: dir === "rtl" ? "auto" : "20%",
@@ -51,11 +57,11 @@ export function HeroSection() {
           }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-border/20 rounded-full animate-rotate-slow"
+          className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-border/20 rounded-full animate-rotate-slow"
           style={{ animationDuration: "30s" }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-border/10 rounded-full animate-rotate-slow"
+          className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-border/10 rounded-full animate-rotate-slow"
           style={{ animationDirection: "reverse", animationDuration: "20s" }}
         />
       </div>
@@ -100,18 +106,6 @@ export function HeroSection() {
             {/* Large particles */}
             {[0, 1, 2, 3].map((i) => (
               <div key={`large-${i}`}>
-                {/* Glow halo */}
-                <div
-                  className="absolute w-4 h-4 bg-primary rounded-full blur-sm animate-float"
-                  style={{
-                    top: `${15 + Math.sin(i * Math.PI / 2) * 35}%`,
-                    left: `${50 + Math.cos(i * Math.PI / 2) * 35}%`,
-                    animationDelay: `${i * 0.3}s`,
-                    animationDuration: "6s",
-                    opacity: 0.15,
-                    filter: "blur(8px)",
-                  }}
-                />
                 {/* Main particle */}
                 <div
                   className="absolute w-2.5 h-2.5 bg-primary rounded-full animate-float shadow-lg shadow-primary/60"
@@ -224,7 +218,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-subtle">
+      <div className="hidden md:block [@media(max-height:760px)]:!hidden absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-subtle">
         <a
           href="#about"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"

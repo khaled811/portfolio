@@ -20,7 +20,7 @@ export function Footer() {
             <div>
               <p className="font-semibold">{language === "ar" ? "خالد عصام" : "Khaled Issam"}</p>
               <p className="text-sm text-muted-foreground">
-                {language === "ar" ? "مطور فلاتر" : "Flutter Developer"}
+                {language === "ar" ? "مطور تطبيقات ومواقع" : "Mobile & Web Developer"}
               </p>
             </div>
           </div>

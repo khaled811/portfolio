@@ -17,9 +17,9 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-  title: "Khaled Issam | Mobile Applications Developer",
+  title: "Khaled Issam | Mobile & Web Applications Developer",
   description:
-    "Flutter developer with 2 years of experience building beautiful, performant mobile apps. خالد عصام - مطور فلاتر بخبرة سنتين",
+    "Mobile and web developer building Flutter apps and Laravel / Next.js web systems. خالد عصام - مطور تطبيقات موبايل ومواقع ويب",
   generator: "v0.app",
   icons: {
     icon: [

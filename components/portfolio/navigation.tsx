@@ -28,6 +28,7 @@ export function Navigation() {
   const navLinks = [
     { label: t("nav.about"), href: "#about" },
     { label: t("nav.projects"), href: "#projects" },
+    { label: t("nav.web"), href: "#web" },
     { label: t("nav.contact"), href: "#contact" },
   ]
 
@@ -48,7 +49,7 @@ export function Navigation() {
             <a href="#" className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-chart-2 flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">
-                  {language === "ar" ? "م" : "D"}
+                  {language === "ar" ? "خ" : "K"}
                 </span>
               </div>
               <span className="font-semibold text-lg hidden sm:block">

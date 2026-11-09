@@ -16,32 +16,32 @@ export function ProjectsSection() {
 
  const ayamaScreenshots = [
   {
-    url: '/images/welcome.png',
+    url: '/images/welcome.webp',
     title: language === 'ar' ? 'شاشة البداية' : 'Splash Screen',
     description: language === 'ar' ? 'شاشة الترحيب مع شعار Ayama' : 'Welcome splash screen with Ayama branding',
   },
   {
-    url: '/images/language-selection.png',
+    url: '/images/language-selection.webp',
     title: language === 'ar' ? 'اختيار اللغة' : 'Language Selection',
     description: language === 'ar' ? 'اختر بين العربية والإنجليزية للبدء' : 'Choose between Arabic and English to get started',
   },
   {
-    url: '/images/sessions-ar.png',
+    url: '/images/sessions-ar.webp',
     title: language === 'ar' ? 'الجلسات (العربية)' : 'Sessions (Arabic)',
     description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة عربية' : '4 breathing sessions designed for kids with Arabic interface',
   },
   {
-    url: '/images/sessions-en.png',
+    url: '/images/sessions-en.webp',
     title: language === 'ar' ? 'الجلسات (الإنجليزية)' : 'Sessions (English)',
     description: language === 'ar' ? '4 جلسات تنفس مصممة خصيصاً للأطفال مع واجهة إنجليزية' : '4 breathing sessions designed for kids with English interface',
   },
   {
-    url: '/images/settings-en.png',
+    url: '/images/settings-en.webp',
     title: language === 'ar' ? 'الإعدادات (الإنجليزية)' : 'Settings (English)',
     description: language === 'ar' ? 'خيارات اللغة والتعليمات ومعلومات التطبيق' : 'Language options, instructions, and app info',
   },
   {
-    url: '/images/settings-ar.png',
+    url: '/images/settings-ar.webp',
     title: language === 'ar' ? 'الإعدادات (العربية)' : 'Settings (Arabic)',
     description: language === 'ar' ? 'دعم كامل للعربية مع واجهة RTL' : 'Full Arabic support with RTL interface',
   },
@@ -49,87 +49,87 @@ export function ProjectsSection() {
 
 const najehScreenshots = [
   {
-    url: '/images/najeh-home.png',
+    url: '/images/najeh-home.webp',
     title: language === 'ar' ? 'الرئيسية' : 'Home',
     description: language === 'ar' ? 'الواجهة الرئيسية' : 'Main dashboard',
   },
   {
-    url: '/images/najeh-add-invoice.png',
+    url: '/images/najeh-add-invoice.webp',
     title: language === 'ar' ? 'إضافة فاتورة' : 'Add Invoice',
     description: language === 'ar' ? 'إنشاء فاتورة جديدة' : 'Create invoice',
   },
   {
-    url: '/images/najeh-add-edit-product.png',
+    url: '/images/najeh-add-edit-product.webp',
     title: language === 'ar' ? 'إضافة وتعديل منتج' : 'Add/Edit Product',
     description: language === 'ar' ? 'إدارة المنتجات' : 'Manage products',
   },
   {
-    url: '/images/najeh-collection.png',
+    url: '/images/najeh-collection.webp',
     title: language === 'ar' ? 'التحصيل' : 'Collection',
     description: language === 'ar' ? 'تسجيل الدفعات' : 'Record payments',
   },
   {
-    url: '/images/najeh-collection-schedule.png',
+    url: '/images/najeh-collection-schedule.webp',
     title: language === 'ar' ? 'مواعيد التحصيل' : 'Collection Schedule',
     description: language === 'ar' ? 'تنظيم المواعيد' : 'Manage schedules',
   },
   {
-    url: '/images/najeh-customer-options.png',
+    url: '/images/najeh-customer-options.webp',
     title: language === 'ar' ? 'خيارات العميل' : 'Customer Options',
     description: language === 'ar' ? 'إدارة العميل' : 'Customer actions',
   },
   {
-    url: '/images/najeh-customers.png',
+    url: '/images/najeh-customers.webp',
     title: language === 'ar' ? 'العملاء' : 'Customers',
     description: language === 'ar' ? 'قائمة العملاء' : 'Customer list',
   },
   {
-    url: '/images/najeh-accounts.png',
+    url: '/images/najeh-accounts.webp',
     title: language === 'ar' ? 'الحسابات' : 'Accounts',
     description: language === 'ar' ? 'أرصدة العملاء' : 'Balances',
   },
   {
-    url: '/images/najeh-records.png',
+    url: '/images/najeh-records.webp',
     title: language === 'ar' ? 'السجلات' : 'Records',
     description: language === 'ar' ? 'عرض السجلات' : 'Records history',
   },
   {
-    url: '/images/najeh-reports.png',
+    url: '/images/najeh-reports.webp',
     title: language === 'ar' ? 'التقارير' : 'Reports',
     description: language === 'ar' ? 'تقارير المبيعات' : 'Sales reports',
   },
   {
-    url: '/images/najeh-monthly-sales-report.png',
+    url: '/images/najeh-monthly-sales-report.webp',
     title: language === 'ar' ? 'تقرير شهري' : 'Monthly Report',
     description: language === 'ar' ? 'تقرير المبيعات الشهري' : 'Monthly sales report',
   },
   {
-    url: '/images/najeh-returns.png',
+    url: '/images/najeh-returns.webp',
     title: language === 'ar' ? 'المرتجعات' : 'Returns',
     description: language === 'ar' ? 'إدارة المرتجعات' : 'Manage returns',
   },
   {
-    url: '/images/najeh-slow-products.png',
+    url: '/images/najeh-slow-products.webp',
     title: language === 'ar' ? 'منتجات بطيئة' : 'Slow Products',
     description: language === 'ar' ? 'تحليل المنتجات البطيئة' : 'Slow items',
   },
   {
-    url: '/images/najeh-settings.png',
+    url: '/images/najeh-settings.webp',
     title: language === 'ar' ? 'الإعدادات' : 'Settings',
     description: language === 'ar' ? 'إعدادات التطبيق' : 'App settings',
   },
   {
-    url: '/images/najeh-add-restriction.png',
+    url: '/images/najeh-add-restriction.webp',
     title: language === 'ar' ? 'إضافة قيد' : 'Add Restriction',
     description: language === 'ar' ? 'إضافة قيد جديد' : 'Add restriction',
   },
   {
-    url: '/images/najeh-customer-inventory.png',
+    url: '/images/najeh-customer-inventory.webp',
     title: language === 'ar' ? 'مخزون العميل' : 'Customer Inventory',
     description: language === 'ar' ? 'مخزون خاص بالعميل' : 'Customer stock',
   },
   {
-    url: '/images/najeh-customer-update-inventory.png',
+    url: '/images/najeh-customer-update-inventory.webp',
     title: language === 'ar' ? 'تحديث مخزون العميل' : 'Update Customer Inventory',
     description: language === 'ar' ? 'تحديث مخزون العميل' : 'Update stock',
   },
@@ -137,47 +137,47 @@ const najehScreenshots = [
 
   const docstracScreenshots = [
   {
-    url: '/images/login.png',
+    url: '/images/login.webp',
     title: language === 'ar' ? 'تسجيل الدخول' : 'Login',
     description: language === 'ar' ? 'الدخول للحساب' : 'Login screen',
   },
   {
-    url: '/images/signUp.png',
+    url: '/images/signUp.webp',
     title: language === 'ar' ? 'إنشاء حساب' : 'Sign Up',
     description: language === 'ar' ? 'تسجيل حساب جديد' : 'Create account',
   },
   {
-    url: '/images/available-forms.png',
+    url: '/images/available-forms.webp',
     title: language === 'ar' ? 'النماذج المتاحة' : 'Forms',
     description: language === 'ar' ? 'جميع النماذج' : 'Available forms',
   },
   {
-    url: '/images/leave-form.png',
+    url: '/images/leave-form.webp',
     title: language === 'ar' ? 'طلب إجازة' : 'Leave Form',
     description: language === 'ar' ? 'نموذج الإجازة' : 'Leave request',
   },
   {
-    url: '/images/resit-form.png',
+    url: '/images/resit-form.webp',
     title: language === 'ar' ? 'إعادة امتحان' : 'Resit Form',
     description: language === 'ar' ? 'طلب إعادة' : 'Exam resit',
   },
   {
-    url: '/images/clash-form.png',
+    url: '/images/clash-form.webp',
     title: language === 'ar' ? 'تضارب امتحان' : 'Clash Form',
     description: language === 'ar' ? 'تضارب جدول' : 'Exam clash',
   },
   {
-    url: '/images/appeal-form.png',
+    url: '/images/appeal-form.webp',
     title: language === 'ar' ? 'استئناف' : 'Appeal',
     description: language === 'ar' ? 'استئناف أكاديمي' : 'Academic appeal',
   },
   {
-    url: '/images/status.png',
+    url: '/images/status.webp',
     title: language === 'ar' ? 'حالة الطلب' : 'Status',
     description: language === 'ar' ? 'متابعة الطلبات' : 'Track requests',
   },
   {
-    url: '/images/notifications.png',
+    url: '/images/notifications.webp',
     title: language === 'ar' ? 'الإشعارات' : 'Notifications',
     description: language === 'ar' ? 'تنبيهات فورية' : 'Notifications',
   },
@@ -193,7 +193,7 @@ const najehScreenshots = [
       tags: ['Flutter', 'Clean Architecture', 'Hive', 'Riverpod'],
       color: 'from-red-500 to-red-700',
       bgColor: 'bg-gradient-to-br from-red-50 to-red-100',
-      icon: '/images/najeh-icon.png',
+      icon: '/images/najeh-icon.webp',
       offline: true,
       features: [
         t('projects.najeh.feature1'),
@@ -215,7 +215,7 @@ const najehScreenshots = [
       tags: ['Flutter', 'Video Player', 'Offline Storage'],
       color: 'from-blue-400 to-blue-600',
       bgColor: 'bg-gradient-to-br from-blue-50 to-cyan-100',
-      icon: '/images/ayama-icon.png',
+      icon: '/images/ayama-icon.webp',
       offline: true,
       features: [
         t('projects.ayama.feature1'),
@@ -236,7 +236,7 @@ const najehScreenshots = [
       tags: ['Flutter', 'Firebase', 'REST API', 'Real-time'],
       color: 'from-purple-500 to-purple-700',
       bgColor: 'bg-gradient-to-br from-purple-50 to-purple-100',
-      icon: '/images/docstrac-icon.png',
+      icon: '/images/docstrac-icon.webp',
       offline: false,
       features: [
         t('projects.docstrac.feature1'),
@@ -270,6 +270,16 @@ const najehScreenshots = [
   const currentProject = projects[activeIndex]
   const currentScreenshots = currentProject.screenshots || []
   const hasScreenshots = currentScreenshots.length > 0
+
+  // Preload the next/previous screenshots while the modal is open
+  useEffect(() => {
+    if (!showScreenshots || currentScreenshots.length === 0) return
+    const n = currentScreenshots.length
+    ;[(activeScreenshot + 1) % n, (activeScreenshot - 1 + n) % n].forEach((i) => {
+      const img = new window.Image()
+      img.src = currentScreenshots[i].url
+    })
+  }, [showScreenshots, activeScreenshot, currentScreenshots])
 
   const handleNextScreenshot = () => {
     setActiveScreenshot((prev) => (prev + 1) % currentScreenshots.length)
@@ -435,7 +445,7 @@ const najehScreenshots = [
       {/* Screenshots Modal */}
       {showScreenshots && (
         <div
-          className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4"
           onClick={() => setShowScreenshots(false)}
         >
           <div
@@ -460,9 +470,11 @@ const najehScreenshots = [
                     <div className="w-full h-full bg-black p-3">
                       <div className="w-full h-full rounded-[32px] overflow-hidden bg-white">
                         <img
+                          key={currentScreenshots[activeScreenshot].url}
                           src={currentScreenshots[activeScreenshot].url}
                           alt={currentScreenshots[activeScreenshot].title}
-                          className="w-full h-full object-cover animate-in fade-in duration-500"
+                          decoding="async"
+                          className="w-full h-full object-cover object-top animate-in fade-in duration-300"
                         />
                       </div>
                     </div>

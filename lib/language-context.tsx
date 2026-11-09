@@ -17,14 +17,15 @@ const translations = {
     "nav.about": "About",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
+    "nav.web": "Web",
     
     // Hero
     "hero.greeting": "Hello, I'm",
     "hero.name": "Khaled Issam",
-    "hero.title": "Mobile Applications Developer",
-    "hero.titleShort": "Building Apps That Matter",
-    "hero.subtitle": "I craft beautiful mobile experiences",
-    "hero.description": "I build Flutter apps that solve real problems. Two years turning ideas into production-ready applications with clean code, solid architecture, and a focus on what actually matters—reliability and performance.",
+    "hero.title": "Mobile & Web Applications Developer",
+    "hero.titleShort": "Building Apps & Websites That Matter",
+    "hero.subtitle": "I craft beautiful mobile and web experiences",
+    "hero.description": "I build Flutter mobile apps and web systems with Laravel and Next.js that solve real problems. Two years turning ideas into production-ready products with clean code, solid architecture, and a focus on what actually matters—reliability and performance.",
     "hero.cta": "View My Work",
     "hero.contact": "Get In Touch",
     "hero.available": "Available for freelance",
@@ -33,7 +34,7 @@ const translations = {
     // About
     "about.title": "About Me",
     "about.subtitle": "More than writing code — I build solutions.",
-    "about.description": "I focus on understanding the real needs behind every project and building solutions that work smoothly, scale well, and feel natural to use. From offline-first tools for field teams to simple apps that help people in their daily lives, I approach every project with the mindset that good technology should make life easier.",
+    "about.description": "I focus on understanding the real needs behind every project and building solutions that work smoothly, scale well, and feel natural to use. From offline-first mobile tools for field teams to web dashboards that run a business, I approach every project with the mindset that good technology should make life easier.",
     "about.experience": "Years Experience",
     "about.apps": "Apps Published",
     "about.downloads": "Total Downloads",
@@ -50,7 +51,7 @@ const translations = {
     
     // Projects
     "projects.title": "Featured Projects",
-    "projects.subtitle": "Apps that make a difference",
+    "projects.subtitle": "Mobile apps and web systems that make a difference",
     "projects.viewStore": "View on Store",
     "projects.learnMore": "Learn More",
     "projects.offline": "Offline App",
@@ -112,14 +113,15 @@ const translations = {
     "nav.about": "عني",
     "nav.projects": "المشاريع",
     "nav.contact": "تواصل",
+    "nav.web": "المواقع",
     
     // Hero
     "hero.greeting": "مرحباً، أنا",
     "hero.name": "خالد عصام",
-    "hero.title": "مطور تطبيقات موبايل",
-    "hero.titleShort": "بناء تطبيقات ذات معنى",
-    "hero.subtitle": "أصنع تجارب موبايل استثنائية",
-    "hero.description": "مطوّر Flutter بخبرة عملية في تطوير تطبيقات موبايل جاهزة للإنتاج",
+    "hero.title": "مطور تطبيقات موبايل ومواقع ويب",
+    "hero.titleShort": "بناء تطبيقات ومواقع ذات معنى",
+    "hero.subtitle": "أصنع تجارب موبايل وويب استثنائية",
+    "hero.description": "أبني تطبيقات موبايل بـ Flutter وأنظمة ومواقع ويب بـ Laravel وNext.js تحل مشاكل حقيقية. خبرة عملية في تسليم منتجات جاهزة للإنتاج بكود نظيف وهيكلة متينة.",
     "hero.cta": "شاهد أعمالي",
     "hero.contact": "تواصل معي",
     "hero.available": "متاح للعمل الحر",
@@ -128,7 +130,7 @@ const translations = {
     // About
     "about.title": "عني",
     "about.subtitle": "أكثر من مجرد كود، إنه حل المشاكل",
-    "about.description": "مطوّر Flutter من اليمن بخبرة عملية في تطوير تطبيقات موبايل. عملت على مشاريع مختلفة من الفكرة إلى التنفيذ، مع تركيز على تنظيم الكود والاستقرار وسهولة الصيانة.",
+    "about.description": "مطوّر تطبيقات موبايل ومواقع ويب من اليمن. أعمل بـ Flutter للموبايل وبـ Laravel وNext.js للويب. عملت على مشاريع مختلفة من الفكرة إلى التنفيذ، مع تركيز على تنظيم الكود والاستقرار وسهولة الصيانة.",
     "about.experience": "سنوات الخبرة",
     "about.apps": "تطبيقات منشورة",
     "about.downloads": "إجمالي التحميلات",
@@ -145,7 +147,7 @@ const translations = {
     
     // Projects
     "projects.title": "المشاريع المميزة",
-    "projects.subtitle": "تطبيقات تصنع فرقاً",
+    "projects.subtitle": "تطبيقات وأنظمة ويب تصنع فرقاً",
     "projects.viewStore": "عرض في المتجر",
     "projects.learnMore": "اعرف المزيد",
     "projects.offline": "تطبيق أوفلاين",

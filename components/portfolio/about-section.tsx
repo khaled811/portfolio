@@ -33,7 +33,7 @@ export function AboutSection() {
             const progress = step / steps
             setCounters({
               years: Math.round(2 * progress),
-              apps: Math.round(3 * progress),
+              apps: Math.round(4 * progress),
               downloads: Math.round(100 * progress),
             })
             if (step >= steps) clearInterval(timer)
@@ -75,7 +75,7 @@ export function AboutSection() {
 
   const stats = [
     { value: `${counters.years}+`, label: language === "ar" ? "سنوات خبرة" : "Years Building" },
-    { value: counters.apps, label: language === "ar" ? "تطبيقات" : "Apps Shipped" },
+    { value: counters.apps, label: language === "ar" ? "مشاريع منجزة" : "Projects Shipped" },
     { value: language === "ar" ? "100%" : "100%", label: language === "ar" ? "رضا العملاء" : "Client Happy" },
   ]
 
@@ -126,7 +126,7 @@ export function AboutSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-1">{t("about.experienceYears")}</h3>
-                <p className="text-muted-foreground">{language === "ar" ? "بناء تطبيقات إنتاجية" : "Building production apps"}</p>
+                <p className="text-muted-foreground">{language === "ar" ? "بناء تطبيقات ومواقع إنتاجية" : "Building production apps & web systems"}</p>
               </div>
             </div>
           </div>
@@ -181,12 +181,15 @@ export function AboutSection() {
           <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-center">{t("about.skills")}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {[
-              { name: "Flutter & Dart", desc: language === "ar" ? "تطوير التطبيقات الأساسي" : "Core development" },
-              { name: "REST APIs", desc: language === "ar" ? "تكامل الخوادم والبيانات" : "Server integration" },
-              { name: "Firebase", desc: language === "ar" ? "قاعدة بيانات سحابية ومراقبة" : "Cloud database & auth" },
+              { name: "Flutter & Dart", desc: language === "ar" ? "تطوير تطبيقات الموبايل" : "Mobile development" },
               { name: "Riverpod & Bloc", desc: language === "ar" ? "إدارة الحالة بكفاءة" : "State management" },
               { name: "Clean Architecture", desc: language === "ar" ? "هيكل منظم وقابل للتطور" : "Scalable structure" },
               { name: "Hive & Local Storage", desc: language === "ar" ? "تخزين محلي وعمل أوفلاين" : "Offline support" },
+              { name: "Laravel & Filament", desc: language === "ar" ? "أنظمة ولوحات تحكم ويب" : "Web systems & admin panels" },
+              { name: "Next.js & React", desc: language === "ar" ? "مواقع وواجهات حديثة" : "Modern websites & UIs" },
+              { name: "REST APIs", desc: language === "ar" ? "تكامل الخوادم والبيانات" : "Server integration" },
+              { name: "Firebase", desc: language === "ar" ? "قاعدة بيانات سحابية ومراقبة" : "Cloud database & auth" },
+              { name: "Tailwind CSS", desc: language === "ar" ? "تصميم واجهات متجاوبة" : "Responsive UI design" },
             ].map((tech) => (
               <div key={tech.name} className="glass rounded-xl p-4 text-center">
                 <p className="font-semibold">{tech.name}</p>
