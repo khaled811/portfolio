@@ -214,29 +214,49 @@ const najehScreenshots = [
 
   const aryafScreenshots = [
     {
+      url: '/images/aryaf/login.webp',
+      title: isAr ? 'تسجيل الدخول' : 'Sign in',
+      description: isAr ? 'دخول برقم الهاتف وكلمة المرور، ولكل دور شاشاته وصلاحياته.' : 'Sign in with phone and password, with screens and permissions per role.',
+    },
+    {
       url: '/images/aryaf/dashboard.webp',
       title: isAr ? 'لوحة تحكم المدير' : 'Manager dashboard',
-      description: isAr ? 'ديون السوق والعملاء، اختصارات الإدارة، وسجل التصفية اليومية مع تصدير PDF.' : 'Market & client debts, management shortcuts and the daily settlement log with PDF export.',
+      description: isAr ? 'ديون السوق والعملاء، تقارير التصفية اليومية، واختصارات الإدارة.' : 'Market and client debts, daily settlement reports and management shortcuts.',
     },
     {
-      url: '/images/aryaf/cashier-sales.webp',
-      title: isAr ? 'مبيعات الكاشير' : 'Cashier sales',
-      description: isAr ? 'حصر مبيعات الأصناف (المستلم، التالف، المتبقي، الموزّع) وحفظ الكشف بالسحابة.' : 'Per-item sales tally (received, waste, remaining, distributed) saved to the cloud.',
+      url: '/images/aryaf/clients.webp',
+      title: isAr ? 'العملاء والديون' : 'Clients & debts',
+      description: isAr ? 'قائمة العملاء بالأرصدة والمطلوب، مع بحث وفرز بين البقالات والأفراد.' : 'Client list with balances and amounts due, searchable and split into shops and individuals.',
     },
     {
-      url: '/images/aryaf/showroom-home.webp',
-      title: isAr ? 'المعرض' : 'Showroom',
-      description: isAr ? 'النقد المتوقع، المبيعات والمصاريف، طلب عهدة وتسجيل بيع وحركات اليوم.' : 'Expected cash, sales and expenses, custody requests and today’s movements.',
-    },
-    {
-      url: '/images/aryaf/baker-home.webp',
-      title: isAr ? 'الإنتاج اليومي (العجّان)' : 'Daily production (baker)',
-      description: isAr ? 'فترات الإنتاج وكميات العجن المطلوبة من الإدارة وتسجيل الدفعات.' : 'Production periods, dough quantities set by management, and batch logging.',
+      url: '/images/aryaf/staff.webp',
+      title: isAr ? 'الموظفون والصلاحيات' : 'Staff & permissions',
+      description: isAr ? 'إدارة الفريق وأدواره: مدير، كاشير، كابتن توزيع، ومسؤول معرض.' : 'Manage the team and roles: admin, cashier, delivery captain and showroom manager.',
     },
     {
       url: '/images/aryaf/inventory.webp',
-      title: isAr ? 'المخزون' : 'Inventory',
-      description: isAr ? 'المواد الخام والمنتجات مع تنبيه فوري للمواد منخفضة الرصيد.' : 'Raw materials and products with instant alerts for low stock.',
+      title: isAr ? 'المستودع' : 'Inventory',
+      description: isAr ? 'المنتجات وأسعارها والمواد الخام في مكان واحد.' : 'Products, prices and raw materials in one place.',
+    },
+    {
+      url: '/images/aryaf/baker.webp',
+      title: isAr ? 'الإنتاج اليومي (العجّان)' : 'Daily production (baker)',
+      description: isAr ? 'فترات الإنتاج وخطة الإدارة والكمية المطلوبة لكل فترة.' : 'Production periods, management plan and the quantity required per period.',
+    },
+    {
+      url: '/images/aryaf/baker-materials.webp',
+      title: isAr ? 'كميات العجن والخامات' : 'Dough quantities & materials',
+      description: isAr ? 'اختيار كمية الدفعة مع احتساب الخامات المسحوبة والمتوفر منها.' : 'Pick the batch size with the materials drawn and stock available calculated.',
+    },
+    {
+      url: '/images/aryaf/cashier-close.webp',
+      title: isAr ? 'التصفية وإغلاق الصندوق' : 'Daily close-out',
+      description: isAr ? 'المقبوضات والمخرجات والتسويات وصافي النقد المتوقع في الدرج.' : 'Receipts, payouts and adjustments, with the expected net cash in the drawer.',
+    },
+    {
+      url: '/images/aryaf/cashier-expenses.webp',
+      title: isAr ? 'المصروفات والسلف اليومية' : 'Daily expenses & advances',
+      description: isAr ? 'تسجيل المصروفات وسداد الالتزامات ومسحوبات الموظفين مع سجل يومي.' : 'Log expenses, settle obligations and staff withdrawals with a daily record.',
     },
   ]
 
