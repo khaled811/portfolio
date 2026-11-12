@@ -33,7 +33,7 @@ export function AboutSection() {
             const progress = step / steps
             setCounters({
               years: Math.round(2 * progress),
-              apps: Math.round(4 * progress),
+              apps: Math.round(10 * progress),
               downloads: Math.round(100 * progress),
             })
             if (step >= steps) clearInterval(timer)
@@ -75,8 +75,9 @@ export function AboutSection() {
 
   const stats = [
     { value: `${counters.years}+`, label: language === "ar" ? "سنوات خبرة" : "Years Building" },
-    { value: counters.apps, label: language === "ar" ? "مشاريع منجزة" : "Projects Shipped" },
-    { value: language === "ar" ? "100%" : "100%", label: language === "ar" ? "رضا العملاء" : "Client Happy" },
+    { value: `${counters.apps}+`, label: language === "ar" ? "مشاريع منجزة" : "Projects Shipped" },
+    { value: "2", label: language === "ar" ? "منصات: موبايل وويب" : "Platforms: Mobile + Web" },
+    { value: "24h", label: language === "ar" ? "زمن الرد على رسالتك" : "Reply time" },
   ]
 
   return (
@@ -134,7 +135,7 @@ export function AboutSection() {
 
         {/* Quick Stats */}
         <div
-          className={`grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-20 transition-all duration-1000 delay-200 ${
+          className={`grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-20 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
