@@ -577,7 +577,7 @@ const najehScreenshots = [
             <div className="flex flex-col lg:flex-row items-center gap-8 p-8">
               {/* Phone frame with screenshot */}
               <div className="flex-1 flex justify-center">
-                <div className="relative w-64 h-[520px]">
+                <div className="relative w-64 h-[500px]">
                   {/* Phone frame */}
                   <div className="absolute inset-0 bg-black rounded-[40px] border-8 border-gray-900 shadow-2xl overflow-hidden">
                     <div className="w-full h-full bg-black p-3">
