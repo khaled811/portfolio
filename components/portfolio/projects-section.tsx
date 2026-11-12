@@ -1,10 +1,9 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { PhoneMockup } from './phone-mockup'
+import { PhoneFan } from './phone-fan'
 import { ArrowUpRight, CheckCircle, WifiOff, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLanguage } from '@/lib/language-context'
-import Image from 'next/image'
 
 export function ProjectsSection() {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -431,39 +430,20 @@ const najehScreenshots = [
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Phone mockup */}
             <div
-              className={`flex justify-center lg:justify-end transition-all duration-1000 ${
+              className={`w-full flex justify-center lg:justify-end transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
               }`}
             >
-              <PhoneMockup>
-                <div
-                  className={`w-full h-full ${currentProject.bgColor} flex items-center justify-center`}
-                >
-                  <div className="text-center p-6">
-                    <div className="w-24 h-24 mx-auto mb-6 rounded-3xl bg-white shadow-xl flex items-center justify-center overflow-hidden">
-                      <Image
-                        src={currentProject.icon || '/placeholder.svg'}
-                        alt={currentProject.title}
-                        width={96}
-                        height={96}
-                        className="w-20 h-20 object-contain"
-                      />
-                    </div>
-                    <h3
-                      className={`text-2xl font-bold mb-2 bg-gradient-to-r ${currentProject.color} bg-clip-text text-transparent`}
-                    >
-                      {currentProject.titleDisplay}
-                    </h3>
-                    <p className="text-sm text-gray-600">{currentProject.subtitle}</p>
-                    {currentProject.offline && (
-                      <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 bg-green-100 text-green-700 rounded-full text-xs font-medium">
-                        <WifiOff className="w-3 h-3" />
-                        {language === 'ar' ? 'يعمل أوفلاين' : 'Works Offline'}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </PhoneMockup>
+              <PhoneFan
+                key={currentProject.id}
+                screenshots={currentScreenshots}
+                icon={currentProject.icon}
+                name={currentProject.title}
+                onSelect={(i) => {
+                  setActiveScreenshot(i)
+                  setShowScreenshots(true)
+                }}
+              />
             </div>
 
             {/* Project details */}
